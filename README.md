@@ -1,2 +1,16 @@
-# Beat_Scalpers
- 
+# Beat the Scalpers!!!
+
+DISCLAIMER: This is merely a tutorial for an application of Selenium. I do not encourage scalping and I take no responsibility for any user buying undesired items by mistake or the code not working for your particular needs.
+
+Have you tried buying a high-demand low-supply tech item without success? you are not alone. The supply chain disruptions have only made it more difficult to find tech products like the PlayStation 5, Xbox One series, and GPUs. The competence to acquire one of these products has unraveled an online battle where humans no longer have a chance of manually purchasing these products. Bots have taken over and scalping bots have only exacerbated the problem. Fortunately, I bring to you a ready-to-run code to purchase one of these items for yourself without overpaying for a scalper's product without warranty.
+
+This code is written for python. It uses the packages time and [Selenium](https://pypi.org/project/selenium/). If you are not familiar with Selenium, it is a Chromium driver (based on Google Chrome) to perform automated tasks on websites, for instance, automatically checking out for a [sold out PS5 from BestBuy](https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149) as soon as it gets available. Installing Selenium (if you don't have it already) is a little bit trickier than a regular library. To avoid deviating from the topic, you can find more information about Selenium [here](https://selenium-python.readthedocs.io/) and the [official installation guide](https://selenium-python.readthedocs.io/installation.html#installing-python-bindings-for-selenium) as well as a [video tutorial](https://www.youtube.com/watch?v=RfFrC8jYC9E&ab_channel=Mukeshotwani) if needed.
+
+The general concept of this bot is to create a Chromium instance (essentially a new tab on incognito mode) that can refresh periodically until the PS5 is available, add the PS5 to your shopping cart and check out with prefilled fields for your name, address, phone number, and payment information. This code assumes that you can trust your running machine and the merchant's website. For additional security, I like to save my personal and financial information on an encrypted file using methods like [Fernet](https://cryptography.io/en/latest/fernet/) from [cryptography](https://pypi.org/project/cryptography/) or [rsa](https://pypi.org/project/rsa/). After your purchase is complete, a screenshot of your confirmation is saved for your personal records.
+
+Some websites have implemented restrictions for continuously refreshing a page, be careful not to select a short time that would knock off your opportunity to buy your PS5. You can easily add email notifications if your bot gets stuck or if there is a step where human intervention is required by the website (such as captchas).
+
+Needless to say, run your code little by little, understanding what it does and if modifications are necessary without exposing your information or buying undesired items.
+
+Although you could join the dark side and be another scalper with this code, stores have implemented maximum number of items in the shopping cart and address delivery limits. So, sit down, crack your knuckles and get that well deserved PS5!
+
